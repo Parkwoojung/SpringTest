@@ -20,7 +20,7 @@ public class UserController {
     // GetMapping은 url에 데이터가 노출 되기 때문에 단순 페이지 조회나 상품 쇼핑몰 페이지, 게시판, 공지 같은 단순 페이지 띄우는 작업만 사용한다.
     // PostMapping은 url에 데이터가 노출되지 않음 중요한 데이터 이동은 post로 사용한다.
 
-    @GetMapping(value = "user/userReg") //url은 자유
+    @GetMapping(value = "user/userReg") //url은 자유로 작성한다.
     public String userReg(){
         log.info(this.getClass().getName() + "회원가입 페이지 시작!");
 
